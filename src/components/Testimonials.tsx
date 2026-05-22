@@ -28,7 +28,7 @@ const testimonials = [
     initials: 'PN',
     color: 'from-emerald-400 to-teal-500',
     quote:
-      'The analytics alone are worth it. We finally understand where time is being lost and Lumina's AI helps us fix it automatically.',
+      "The analytics alone are worth it. We finally understand where time is being lost and Lumina's AI helps us fix it automatically.",
     stars: 5,
   },
   {
@@ -42,7 +42,7 @@ const testimonials = [
     stars: 5,
   },
   {
-    name: 'Lena Müller',
+    name: 'Lena M\u00fcller',
     role: 'VP Engineering',
     company: 'Datrix',
     initials: 'LM',
@@ -58,7 +58,7 @@ const testimonials = [
     initials: 'JO',
     color: 'from-cyan-400 to-sky-500',
     quote:
-      'Integrated with our GitHub and Figma workflow in under 10 minutes. The onboarding is the smoothest I\'ve ever experienced.',
+      "Integrated with our GitHub and Figma workflow in under 10 minutes. The onboarding is the smoothest I've ever experienced.",
     stars: 5,
   },
 ];
@@ -72,7 +72,7 @@ export default function Testimonials() {
             Loved by teams
           </div>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
-            Don't take our word for it
+            Don&apos;t take our word for it
           </h2>
           <p className="text-lg text-gray-500">
             Over 50,000 product teams use Lumina to ship faster, together.
@@ -92,7 +92,7 @@ export default function Testimonials() {
                 ))}
               </div>
               {/* Quote */}
-              <p className="text-gray-700 leading-relaxed flex-1">"{quote}"</p>
+              <p className="text-gray-700 leading-relaxed flex-1">&ldquo;{quote}&rdquo;</p>
               {/* Author */}
               <div className="flex items-center gap-3">
                 <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${color} flex items-center justify-center text-white text-sm font-bold`}>
@@ -100,7 +100,7 @@ export default function Testimonials() {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-gray-900">{name}</div>
-                  <div className="text-xs text-gray-500">{role} · {company}</div>
+                  <div className="text-xs text-gray-500">{role} &middot; {company}</div>
                 </div>
               </div>
             </div>
